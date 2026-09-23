@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "nXJukxxRGg4=",
+  "success": true,
+  "projectFilePath": "C:\\gymfit\\gymfit\\gymfit.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.aspnetcore.odata\\9.4.1\\microsoft.aspnetcore.odata.9.4.1.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.extensions.dependencymodel\\10.0.0\\microsoft.extensions.dependencymodel.10.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.odata.core\\8.4.0\\microsoft.odata.core.8.4.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.odata.edm\\8.4.0\\microsoft.odata.edm.8.4.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.odata.modelbuilder\\2.0.0\\microsoft.odata.modelbuilder.2.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\microsoft.spatial\\8.4.0\\microsoft.spatial.8.4.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog\\4.3.0\\serilog.4.3.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.aspnetcore\\10.0.0\\serilog.aspnetcore.10.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.extensions.hosting\\10.0.0\\serilog.extensions.hosting.10.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.extensions.logging\\10.0.0\\serilog.extensions.logging.10.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.formatting.compact\\3.0.0\\serilog.formatting.compact.3.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.settings.configuration\\10.0.0\\serilog.settings.configuration.10.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.sinks.debug\\3.0.0\\serilog.sinks.debug.3.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
+    "C:\\Users\\alexp\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

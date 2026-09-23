@@ -1,0 +1,273 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\gymfit\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\data\\datasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\data\\datasource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\controllers\\sportclassescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\controllers\\sportclassescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\classbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\classbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\classschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\classschedule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\controllers\\trainerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\trainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\membership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\sportclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\sportclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\controllers\\errorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\usermembership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\usermembership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|c:\\gymfit\\gymfit\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CEB8433D-66C4-92D0-A9CD-510BBCF03C43}|gymfit\\gymfit.csproj|solutionrelative:gymfit\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "gymfit\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "gymfit\\Controllers\\MembersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T12:21:04.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DataSource.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Data\\DataSource.cs",
+              "RelativeDocumentMoniker": "gymfit\\Data\\DataSource.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Data\\DataSource.cs",
+              "RelativeToolTip": "gymfit\\Data\\DataSource.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:13:01.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ErrorController.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Controllers\\ErrorController.cs",
+              "RelativeDocumentMoniker": "gymfit\\Controllers\\ErrorController.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Controllers\\ErrorController.cs",
+              "RelativeToolTip": "gymfit\\Controllers\\ErrorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-30T11:45:11.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\User.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\User.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\User.cs",
+              "RelativeToolTip": "gymfit\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:21:04.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SportClassesController.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Controllers\\SportClassesController.cs",
+              "RelativeDocumentMoniker": "gymfit\\Controllers\\SportClassesController.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Controllers\\SportClassesController.cs",
+              "RelativeToolTip": "gymfit\\Controllers\\SportClassesController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:23:39.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\Member.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\Member.cs",
+              "RelativeToolTip": "gymfit\\Models\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:18:06.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Program.cs",
+              "RelativeDocumentMoniker": "gymfit\\Program.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Program.cs",
+              "RelativeToolTip": "gymfit\\Program.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:07:36.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TrainersController.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Controllers\\TrainersController.cs",
+              "RelativeDocumentMoniker": "gymfit\\Controllers\\TrainersController.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Controllers\\TrainersController.cs",
+              "RelativeToolTip": "gymfit\\Controllers\\TrainersController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:26:53.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Trainer.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\Trainer.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\Trainer.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\Trainer.cs",
+              "RelativeToolTip": "gymfit\\Models\\Trainer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:14:10.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ClassSchedule.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\ClassSchedule.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\ClassSchedule.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\ClassSchedule.cs",
+              "RelativeToolTip": "gymfit\\Models\\ClassSchedule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:17:30.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ClassBooking.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\ClassBooking.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\ClassBooking.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\ClassBooking.cs",
+              "RelativeToolTip": "gymfit\\Models\\ClassBooking.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:16:52.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Membership.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\Membership.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\Membership.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\Membership.cs",
+              "RelativeToolTip": "gymfit\\Models\\Membership.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:19:07.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SportClass.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\SportClass.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\SportClass.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\SportClass.cs",
+              "RelativeToolTip": "gymfit\\Models\\SportClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:20:08.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UserMembership.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\UserMembership.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\UserMembership.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\UserMembership.cs",
+              "RelativeToolTip": "gymfit\\Models\\UserMembership.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:21:45.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\gymfit\\gymfit\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "gymfit\\Models\\Admin.cs",
+              "ToolTip": "C:\\gymfit\\gymfit\\Models\\Admin.cs",
+              "RelativeToolTip": "gymfit\\Models\\Admin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-16T11:16:11.015Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

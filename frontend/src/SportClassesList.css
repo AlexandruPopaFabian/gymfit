@@ -1,0 +1,39 @@
+.classes-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.actions {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn.small {
+    background-color: #007bff;
+}
+
+.btn.small:hover {
+    background-color: #0056b3;
+}
+
+.btn.danger {
+    background-color: #dc3545;
+}
+
+.btn.danger:hover {
+    background-color: #a71d2a;
+}
+
+.class-list li {
+    margin: 6px 0;
+}
