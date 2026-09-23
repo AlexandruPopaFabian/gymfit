@@ -11,3 +11,21 @@ Same with Sport Classes :
 <img width="1913" height="755" alt="image" src="https://github.com/user-attachments/assets/6be94ea9-5f2c-4400-ae36-85e746b425db" />
 
 
+Unregistered user can only view the main page,sport classes, trainers and the memberships, also he can sign up or log in :
+<img width="1885" height="706" alt="image" src="https://github.com/user-attachments/assets/5b045fcb-d57c-4615-86d5-f39bc4e651db" />
+
+
+Trainers page :
+<img width="1850" height="867" alt="image" src="https://github.com/user-attachments/assets/97b2db94-6192-48b8-9a5e-8ca40be17c3b" />
+
+Sport Classes page :
+<img width="1901" height="907" alt="image" src="https://github.com/user-attachments/assets/a76f09c3-b7d7-4cfe-99e8-175095a87f4b" />
+Can find details about each one if he selects "VIEW DETAILS" button:
+<img width="1850" height="752" alt="image" src="https://github.com/user-attachments/assets/b71d4b9e-18c1-4450-b73c-fec2f35951cd" />
+
+
+Memberships page :
+<img width="1876" height="897" alt="image" src="https://github.com/user-attachments/assets/d9b9f9d0-cac9-493c-a73c-25fe266aef6b" />
+
+
+
