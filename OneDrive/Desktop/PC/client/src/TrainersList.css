@@ -1,0 +1,163 @@
+.trainers-page {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page-title {
+    font-size: 2rem;
+    color: #1e1e24;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.trainers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 25px;
+    align-items: start;
+}
+
+.trainer-card {
+    background: #ffffff;
+    border: 1px solid #0e0e0e;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.card-header h3 {
+    margin: 0 0 6px 0;
+    font-size: 1.35rem;
+    color: #1e1e24;
+    font-weight: 700;
+}
+
+.specialization {
+    margin: 0 0 20px 0;
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+.quick-info-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.info-badge {
+    background: #ffffff;
+    border: 1px solid #0e0e0e;
+    border-radius: 12px;
+    padding: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.badge-icon {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.badge-value {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #2f3542;
+}
+
+.badge-label {
+    font-size: 0.75rem;
+    color: #a0a5b0;
+    text-transform: uppercase;
+    margin-top: 2px;
+    letter-spacing: 0.5px;
+}
+
+.expanded-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.2s ease, padding 0.3s ease;
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 1px dashed transparent;
+}
+
+.expanded-content.open {
+    max-height: 500px;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px dashed #e9ecef;
+}
+
+.bio-section h4,
+.classes-section h4{
+    font-size: 0.9rem;
+    color: #ff4757;
+    margin: 12px 0 6px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bio-section p {
+    font-size: 0.95rem;
+    color: #495057;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.trainer-classes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.trainer-classes-list li {
+    font-size: 0.95rem;
+    color: #495057;
+    padding: 3px 0;
+}
+
+.no-classes {
+    font-size: 0.9rem;
+    color: #adb5bd;
+    margin: 0;
+}
+
+.view-details-btn {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #2f3542;
+    padding: 14px;
+    width: 100%;
+    margin-top: auto;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-details-btn:hover {
+    background-color: #2f3542;
+    color: #ffffff;
+}

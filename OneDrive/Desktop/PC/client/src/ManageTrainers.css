@@ -1,0 +1,97 @@
+/* Containerul Principal al Paginii */
+.manage-trainers-page {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #212529; /* Griul închis uniform din formular */
+    border: 1px solid #2c3034;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.manage-trainers-page h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.manage-trainers-page .page-subtitle {
+    color: #999999;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+/* Zona de Acțiuni (Butoanele Administrative) */
+.actions-wrapper {
+    display: flex;
+    /* Aliniază-le pe rând, pe centru */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Cardurile de Acțiune - Dimensiuni fixe ca să nu se mai lungească necontrolat */
+.action-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 220px;  /* Păstrăm lățimea fixă */
+    height: 160px; /* Păstrăm înălțimea fixă */
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; /* Previne deformarea din cauza padding-ului */
+}
+
+/* Pictogramele din interiorul butoanelor */
+.action-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+/* Butonul de ADAUGARE (Verde vibrant) */
+.action-card.add-btn {
+    background-color: #2b3035;
+    border: 1px solid #495057;
+    color: #2ed573;
+}
+
+.action-card.add-btn:hover {
+    background-color: #2ed573;
+    color: #ffffff;
+    border-color: #2ed573;
+    box-shadow: 0 8px 20px rgba(46, 213, 115, 0.3);
+}
+
+/* Butonul de ȘTERGERE (Roșu aprins) */
+.action-card.delete-btn {
+    background-color: #2b3035;
+    border: 1px solid #495057;
+    color: #ff4757;
+}
+
+.action-card.delete-btn:hover {
+    background-color: #ff4757;
+    color: #ffffff;
+    border-color: #ff4757;
+    box-shadow: 0 8px 20px rgba(255, 71, 87, 0.3);
+}
+
+/* Efect de animație la hover pe iconițe */
+.action-card:hover .action-icon {
+    transform: scale(1.18);
+}

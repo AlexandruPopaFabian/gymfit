@@ -1,0 +1,146 @@
+/* Containerul Principal al Formularului */
+.add-trainer-container {
+    max-width: 650px; /* Aliniat perfect cu restul formularelor din sistem */
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #212529; /* Griul închis uniform */
+    border: 1px solid #2c3034;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.add-trainer-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* Grupuri de Formular și Label-uri */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    color: #e84118; /* Accentul roșu aprins pe label-uri */
+}
+
+/* Inputuri și Câmpuri de Text */
+.form-input {
+    width: 100%;
+    padding: 14px;
+    background-color: #2b3035; /* Gri contrastant pentru câmpuri */
+    border: 1px solid #495057;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #2ed573;
+    box-shadow: 0 0 0 3px rgba(46, 213, 115, 0.15);
+}
+
+/* Caseta pentru selectarea claselor (Checkboxes) */
+.checkbox-panel {
+    border: 1px solid #495057;
+    background-color: #2b3035;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.checkbox-panel h4 {
+    margin: 0 0 12px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    color: #e84118;
+}
+
+.checkbox-scroll {
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Elementele individuale de tip Checkbox */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    user-select: none;
+}
+
+.checkbox-input {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+    accent-color: #2ed573; /* Colorează bifa direct în verde */
+    cursor: pointer;
+}
+
+/* Personalizare scrollbar pentru o estetică modernă */
+.checkbox-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.checkbox-scroll::-webkit-scrollbar-track {
+    background: #212529;
+    border-radius: 4px;
+}
+
+.checkbox-scroll::-webkit-scrollbar-thumb {
+    background: #495057;
+    border-radius: 4px;
+}
+
+/* Mesaje de eroare specifice câmpurilor */
+.field-error {
+    color: #ff4757;
+    margin: 6px 0 0 0;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Text informativ / placeholder gol */
+.empty-text {
+    font-size: 14px;
+    color: #888888;
+    margin: 5px 0;
+}
+
+/* Butonul Principal de Trimitere */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #2ed573;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background-color: #26af5f;
+}

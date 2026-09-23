@@ -1,0 +1,66 @@
+/* Culorile pentru evenimentele din FullCalendar */
+.spots-grey, .spots-grey .fc-event-main {
+    background-color: #a4b0be !important;
+    border-color: #a4b0be !important;
+    color: #ffffff !important;
+    cursor: not-allowed;
+}
+
+.spots-green, .spots-green .fc-event-main {
+    background-color: #2ed573 !important;
+    border-color: #2ed573 !important;
+    color: #ffffff !important;
+}
+
+.spots-orange, .spots-orange .fc-event-main {
+    background-color: #ffa502 !important;
+    border-color: #ffa502 !important;
+    color: #ffffff !important;
+}
+
+/* Stiluri pentru zona de Legendă */
+.calendar-legend-container {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f1f2f6;
+    border-radius: 6px;
+    border: 1px solid #ced6e0;
+}
+
+.calendar-legend-container h4 {
+    margin: 0 0 12px 0;
+    color: #2f3542;
+}
+
+.legend-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #57606f;
+}
+
+.legend-box {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.grey-box { background-color: #a4b0be; }
+.green-box { background-color: #2ed573; }
+.orange-box { background-color: #ffa502; }
+
+.legend-note {
+    font-size: 12.5px;
+    color: #ff4757;
+    margin: 8px 0 0 0;
+    font-style: italic;
+}

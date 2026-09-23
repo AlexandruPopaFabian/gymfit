@@ -1,0 +1,174 @@
+.account-container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+.account-header {
+    border-bottom: 2px solid #f1f2f6;
+    padding-bottom: 20px;
+    margin-bottom: 35px;
+}
+
+.account-header h1 {
+    font-size: 2.2rem;
+    color: #1e1e24;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+}
+
+.account-header p {
+    color: #747d8c;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.account-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.account-card {
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+    position: relative;
+}
+
+.account-card h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #1e1e24;
+    border-bottom: 2px solid #f1f2f6;
+    padding-bottom: 12px;
+    font-weight: 600;
+}
+
+.membership-info {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.membership-info.no-sub {
+    background: #fdfaf2;
+    border-left: 4px solid #f39c12;
+}
+
+.membership-info.active-sub {
+    background: #f2fbf5;
+    border-left: 4px solid #2ed573;
+}
+
+.membership-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 0.75rem;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.membership-badge.status-on { background-color: #2ed573; }
+.membership-badge.status-off { background-color: #7f8c8d; }
+
+.membership-info h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    color: #2f3542;
+}
+
+.price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1e1e24;
+    margin: 0;
+}
+
+.expiration-date {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    color: #57606f;
+}
+
+.booked-classes-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+}
+
+.class-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.2s ease;
+}
+
+.class-item:hover {
+    transform: translateY(-2px);
+}
+
+.class-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.class-name {
+    font-size: 1.15rem;
+    color: #1e1e24;
+    font-weight: 600;
+}
+
+.class-desc {
+    font-size: 0.9rem;
+    color: #747d8c;
+}
+
+.class-date {
+    font-size: 0.9rem;
+    color: #2f3542;
+    margin-top: 2px;
+}
+
+.status-confirmed {
+    background-color: rgba(46, 213, 115, 0.1);
+    color: #2ed573;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.no-data {
+    color: #a4b0be;
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.loading, .error-msg {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 100px;
+    font-family: sans-serif;
+}
+.error-msg { color: #ff4757; }

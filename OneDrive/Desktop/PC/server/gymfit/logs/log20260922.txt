@@ -1,0 +1,1060 @@
+2026-09-22 23:28:44.368 +03:00 [INF] User profile is available. Using 'C:\Users\alexp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-22 23:28:44.575 +03:00 [INF] Creating key {d21081d3-a723-49c7-83ab-aee2b755c714} with creation date 2026-09-22 20:28:44Z, activation date 2026-09-22 20:28:44Z, and expiration date 2026-12-21 20:28:44Z.
+2026-09-22 23:28:44.604 +03:00 [INF] Writing data to file 'C:\Users\alexp\AppData\Local\ASP.NET\DataProtection-Keys\key-d21081d3-a723-49c7-83ab-aee2b755c714.xml'.
+2026-09-22 23:28:45.001 +03:00 [INF] Now listening on: http://localhost:5275
+2026-09-22 23:28:45.148 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-22 23:28:45.148 +03:00 [INF] Hosting environment: Development
+2026-09-22 23:28:45.148 +03:00 [INF] Content root path: C:\Users\alexp\OneDrive\Desktop\PC\server\gymfit
+2026-09-22 23:28:51.177 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:28:51.272 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:28:51.412 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:28:51.473 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:28:56.456 +03:00 [INF] Executed DbCommand (55ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:28:56.717 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:28:56.784 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 5303.2013ms
+2026-09-22 23:28:56.786 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:28:56.790 +03:00 [INF] HTTP GET /api/memberships responded 200 in 5381.2397 ms
+2026-09-22 23:28:56.814 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 5660.0049ms
+2026-09-22 23:29:11.807 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:29:11.828 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:29:11.830 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:29:11.833 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:29:11.986 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:29:12.467 +03:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-09-22 23:29:12.734 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 900.7221ms
+2026-09-22 23:29:12.734 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:29:12.734 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 904.4484 ms
+2026-09-22 23:29:12.735 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 929.7355ms
+2026-09-22 23:29:13.363 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-09-22 23:29:13.365 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:29:13.385 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:29:13.387 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-09-22 23:29:13.627 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-09-22 23:29:14.115 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-09-22 23:29:14.248 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 860.6158ms
+2026-09-22 23:29:14.248 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:29:14.248 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 862.9732 ms
+2026-09-22 23:29:14.248 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 885.7483ms
+2026-09-22 23:29:14.463 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:29:14.464 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:29:14.464 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:29:14.464 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:29:14.467 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:29:14.470 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-09-22 23:29:14.472 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 7.5185ms
+2026-09-22 23:29:14.472 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:29:14.472 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 8.1859 ms
+2026-09-22 23:29:14.473 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 9.3855ms
+2026-09-22 23:29:16.130 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses(4) - null null
+2026-09-22 23:29:16.149 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:29:16.150 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:29:16.165 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:29:16.258 +03:00 [INF] Executed DbCommand (24ms) [Parameters=[@key='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+WHERE s."Id" = @key
+LIMIT 1
+2026-09-22 23:29:16.264 +03:00 [INF] Executing OkObjectResult, writing value of type 'gymfit.Models.SportClass'.
+2026-09-22 23:29:16.269 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 103.8497ms
+2026-09-22 23:29:16.269 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:29:16.269 +03:00 [INF] HTTP GET /odata/SportClasses(4) responded 200 in 119.5796 ms
+2026-09-22 23:29:16.269 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses(4) - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 139.9413ms
+2026-09-22 23:29:22.831 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-09-22 23:29:22.832 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:29:22.832 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:29:22.832 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-09-22 23:29:22.835 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-09-22 23:29:22.852 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-09-22 23:29:22.860 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 28.1905ms
+2026-09-22 23:29:22.860 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:29:22.860 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 28.6794 ms
+2026-09-22 23:29:22.861 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 30.4879ms
+2026-09-22 23:29:49.346 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:29:49.374 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:29:49.374 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:29:49.374 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:29:49.377 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:29:49.378 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:29:49.378 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 3.8711ms
+2026-09-22 23:29:49.378 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:29:49.378 +03:00 [INF] HTTP GET /api/memberships responded 200 in 4.2731 ms
+2026-09-22 23:29:49.379 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 32.834ms
+2026-09-22 23:30:30.507 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:30:30.507 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:30:30.508 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:30:30.508 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:30:30.511 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:30:30.518 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:30:30.518 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 10.6912ms
+2026-09-22 23:30:30.518 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:30:30.519 +03:00 [INF] HTTP GET /api/memberships responded 200 in 11.0573 ms
+2026-09-22 23:30:30.519 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 11.813ms
+2026-09-22 23:30:32.006 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:30:32.006 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:30:32.007 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:30:32.007 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:30:32.008 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:30:32.012 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-09-22 23:30:32.014 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 6.9652ms
+2026-09-22 23:30:32.014 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:30:32.014 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 7.6176 ms
+2026-09-22 23:30:32.015 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 8.8586ms
+2026-09-22 23:30:34.637 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses(4) - null null
+2026-09-22 23:30:34.638 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:30:34.638 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:30:34.638 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:30:34.643 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@key='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+WHERE s."Id" = @key
+LIMIT 1
+2026-09-22 23:30:34.644 +03:00 [INF] Executing OkObjectResult, writing value of type 'gymfit.Models.SportClass'.
+2026-09-22 23:30:34.646 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 7.6167ms
+2026-09-22 23:30:34.646 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:30:34.646 +03:00 [INF] HTTP GET /odata/SportClasses(4) responded 200 in 8.0030 ms
+2026-09-22 23:30:34.646 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses(4) - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 9.4124ms
+2026-09-22 23:30:53.175 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/ClassSchedules?$expand=SportClass,Bookings - null null
+2026-09-22 23:30:53.176 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:30:53.176 +03:00 [INF] Executing endpoint 'gymfit.Controllers.ClassSchedulesController.Get (gymfit)'
+2026-09-22 23:30:53.181 +03:00 [INF] Route matched with {action = "Get", controller = "ClassSchedules"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.ClassSchedulesController (gymfit).
+2026-09-22 23:30:53.207 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.ClassSchedule, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-09-22 23:30:53.295 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."EndTime", c."SportClassId", c."StartTime", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType", c0."Id", c0."ClassScheduleId", c0."CreatedAt", c0."UserId", FALSE
+FROM "ClassSchedules" AS c
+INNER JOIN "SportClasses" AS s ON c."SportClassId" = s."Id"
+LEFT JOIN "ClassBooking" AS c0 ON c."Id" = c0."ClassScheduleId"
+ORDER BY c."Id", s."Id"
+2026-09-22 23:30:53.378 +03:00 [INF] Executed action gymfit.Controllers.ClassSchedulesController.Get (gymfit) in 196.9755ms
+2026-09-22 23:30:53.379 +03:00 [INF] Executed endpoint 'gymfit.Controllers.ClassSchedulesController.Get (gymfit)'
+2026-09-22 23:30:53.379 +03:00 [INF] HTTP GET /odata/ClassSchedules responded 200 in 202.5880 ms
+2026-09-22 23:30:53.379 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/ClassSchedules?$expand=SportClass,Bookings - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 203.587ms
+2026-09-22 23:31:07.863 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/ClassSchedules?$expand=SportClass,Bookings - null null
+2026-09-22 23:31:07.863 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:31:07.863 +03:00 [INF] Executing endpoint 'gymfit.Controllers.ClassSchedulesController.Get (gymfit)'
+2026-09-22 23:31:07.863 +03:00 [INF] Route matched with {action = "Get", controller = "ClassSchedules"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.ClassSchedulesController (gymfit).
+2026-09-22 23:31:07.866 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.ClassSchedule, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-09-22 23:31:07.869 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT c."Id", c."EndTime", c."SportClassId", c."StartTime", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType", c0."Id", c0."ClassScheduleId", c0."CreatedAt", c0."UserId", FALSE
+FROM "ClassSchedules" AS c
+INNER JOIN "SportClasses" AS s ON c."SportClassId" = s."Id"
+LEFT JOIN "ClassBooking" AS c0 ON c."Id" = c0."ClassScheduleId"
+ORDER BY c."Id", s."Id"
+2026-09-22 23:31:07.878 +03:00 [INF] Executed action gymfit.Controllers.ClassSchedulesController.Get (gymfit) in 14.3062ms
+2026-09-22 23:31:07.878 +03:00 [INF] Executed endpoint 'gymfit.Controllers.ClassSchedulesController.Get (gymfit)'
+2026-09-22 23:31:07.878 +03:00 [INF] HTTP GET /odata/ClassSchedules responded 200 in 14.6175 ms
+2026-09-22 23:31:07.878 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/ClassSchedules?$expand=SportClass,Bookings - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 15.3797ms
+2026-09-22 23:31:18.859 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:31:18.860 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:31:18.860 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:31:18.860 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:31:18.861 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:31:18.864 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-09-22 23:31:18.865 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 4.9866ms
+2026-09-22 23:31:18.865 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:31:18.865 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 5.2811 ms
+2026-09-22 23:31:18.865 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 6.2349ms
+2026-09-22 23:31:19.905 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-09-22 23:31:19.905 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:31:19.905 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:31:19.905 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-09-22 23:31:19.908 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-09-22 23:31:19.910 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-09-22 23:31:19.913 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 7.764ms
+2026-09-22 23:31:19.913 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:31:19.913 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 8.1774 ms
+2026-09-22 23:31:19.914 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 9.0005ms
+2026-09-22 23:31:23.744 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:31:23.744 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:31:23.744 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:31:23.745 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:31:23.747 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:31:23.747 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:31:23.748 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 3.0601ms
+2026-09-22 23:31:23.748 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:31:23.748 +03:00 [INF] HTTP GET /api/memberships responded 200 in 3.5195 ms
+2026-09-22 23:31:23.748 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 4.2412ms
+2026-09-22 23:31:25.084 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:31:25.084 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:31:25.085 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:31:25.085 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:31:25.085 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:31:25.087 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-09-22 23:31:25.089 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 3.87ms
+2026-09-22 23:31:25.089 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:31:25.089 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 4.5964 ms
+2026-09-22 23:31:25.090 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 6.4943ms
+2026-09-22 23:34:17.879 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-09-22 23:34:17.880 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:34:17.880 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:34:17.880 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-09-22 23:34:17.888 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-09-22 23:34:17.990 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-09-22 23:34:17.992 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 111.8923ms
+2026-09-22 23:34:17.992 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:34:17.992 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 112.3000 ms
+2026-09-22 23:34:17.993 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 113.8224ms
+2026-09-22 23:34:20.571 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:34:20.571 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:34:20.572 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:34:20.572 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:34:20.573 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:34:20.576 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-09-22 23:34:20.577 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 4.6715ms
+2026-09-22 23:34:20.577 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:34:20.577 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 5.0408 ms
+2026-09-22 23:34:20.577 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 5.9021ms
+2026-09-22 23:34:22.864 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses(2) - null null
+2026-09-22 23:34:22.864 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:34:22.864 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:34:22.864 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:34:22.867 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@key='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+WHERE s."Id" = @key
+LIMIT 1
+2026-09-22 23:34:22.867 +03:00 [INF] Executing OkObjectResult, writing value of type 'gymfit.Models.SportClass'.
+2026-09-22 23:34:22.868 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 3.5276ms
+2026-09-22 23:34:22.868 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:34:22.868 +03:00 [INF] HTTP GET /odata/SportClasses(2) responded 200 in 3.8848 ms
+2026-09-22 23:34:22.868 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses(2) - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 4.6969ms
+2026-09-22 23:34:25.722 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:34:25.722 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:34:25.722 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:34:25.722 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:34:25.728 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:34:25.729 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:34:25.729 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 6.5337ms
+2026-09-22 23:34:25.729 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:34:25.729 +03:00 [INF] HTTP GET /api/memberships responded 200 in 6.8903 ms
+2026-09-22 23:34:25.730 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 7.7029ms
+2026-09-22 23:51:38.982 +03:00 [INF] User profile is available. Using 'C:\Users\alexp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-09-22 23:51:39.366 +03:00 [INF] Now listening on: http://localhost:5275
+2026-09-22 23:51:39.502 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-09-22 23:51:39.503 +03:00 [INF] Hosting environment: Development
+2026-09-22 23:51:39.503 +03:00 [INF] Content root path: C:\Users\alexp\OneDrive\Desktop\PC\server\gymfit
+2026-09-22 23:51:39.768 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers - null null
+2026-09-22 23:51:39.842 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:51:39.963 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:51:39.999 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-09-22 23:51:41.891 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:51:41.894 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:51:41.895 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:51:41.917 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:51:42.337 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:51:43.633 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:51:43.633 +03:00 [INF] Executed DbCommand (57ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization"
+FROM "Users" AS u
+WHERE u."Discriminator" = 'Trainer'
+2026-09-22 23:51:43.902 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:51:43.965 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 2039.6612ms
+2026-09-22 23:51:43.967 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:51:43.973 +03:00 [INF] HTTP GET /api/memberships responded 200 in 2073.8561 ms
+2026-09-22 23:51:44.003 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 2114.1895ms
+2026-09-22 23:51:44.092 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 4091.6892ms
+2026-09-22 23:51:44.092 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-09-22 23:51:44.092 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 4136.4329 ms
+2026-09-22 23:51:44.093 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 4336.727ms
+2026-09-22 23:51:46.799 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:51:46.804 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:51:46.811 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:51:46.815 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:51:46.985 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.ICollection`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-22 23:51:47.404 +03:00 [ERR] Failed executing DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType", s1."ClassesId", s1."TrainersId", s1."Id", s1."Discriminator", s1."Email", s1."Name", s1."PasswordHash", s1."Bio", s1."Specialization"
+FROM "SportClasses" AS s
+LEFT JOIN (
+    SELECT s0."ClassesId", s0."TrainersId", u0."Id", u0."Discriminator", u0."Email", u0."Name", u0."PasswordHash", u0."Bio", u0."Specialization"
+    FROM "SportClassTrainer" AS s0
+    INNER JOIN (
+        SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization"
+        FROM "Users" AS u
+        WHERE u."Discriminator" = 'Trainer'
+    ) AS u0 ON s0."TrainersId" = u0."Id"
+) AS s1 ON s."Id" = s1."ClassesId"
+ORDER BY s."Id", s1."ClassesId", s1."TrainersId"
+2026-09-22 23:51:47.472 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'gymfit.Data.GymFitContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:51:47.482 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 666.9036ms
+2026-09-22 23:51:47.483 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:51:47.484 +03:00 [ERR] HTTP GET /odata/SportClasses responded 500 in 672.4173 ms
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:51:47.496 +03:00 [WRN] The response has already started, the error handler will not be executed.
+2026-09-22 23:51:47.496 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:51:47.502 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:51:47.509 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2026-09-22 23:51:47.517 +03:00 [ERR] Connection id "0HNOOTD6F20ML", Request id "0HNOOTD6F20ML:00000002": An unhandled exception was thrown by the application.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context) in /_3/BrowserRefreshMiddleware.cs:line 84
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:51:47.587 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 787.6192ms
+2026-09-22 23:52:51.611 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-09-22 23:52:51.612 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:52:51.613 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:52:51.613 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-09-22 23:52:51.621 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-09-22 23:52:51.622 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-09-22 23:52:51.623 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 9.7562ms
+2026-09-22 23:52:51.623 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-09-22 23:52:51.623 +03:00 [INF] HTTP GET /api/memberships responded 200 in 10.6253 ms
+2026-09-22 23:52:51.624 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 13.3285ms
+2026-09-22 23:52:52.737 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:52:52.737 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:52:52.737 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:52:52.737 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:52:52.741 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.ICollection`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-22 23:52:52.757 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType", s1."ClassesId", s1."TrainersId", s1."Id", s1."Discriminator", s1."Email", s1."Name", s1."PasswordHash", s1."Bio", s1."Specialization"
+FROM "SportClasses" AS s
+LEFT JOIN (
+    SELECT s0."ClassesId", s0."TrainersId", u0."Id", u0."Discriminator", u0."Email", u0."Name", u0."PasswordHash", u0."Bio", u0."Specialization"
+    FROM "SportClassTrainer" AS s0
+    INNER JOIN (
+        SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization"
+        FROM "Users" AS u
+        WHERE u."Discriminator" = 'Trainer'
+    ) AS u0 ON s0."TrainersId" = u0."Id"
+) AS s1 ON s."Id" = s1."ClassesId"
+ORDER BY s."Id", s1."ClassesId", s1."TrainersId"
+2026-09-22 23:52:52.760 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'gymfit.Data.GymFitContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:52:52.767 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 29.3625ms
+2026-09-22 23:52:52.768 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:52:52.768 +03:00 [ERR] HTTP GET /odata/SportClasses responded 500 in 31.1782 ms
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:52:52.775 +03:00 [WRN] The response has already started, the error handler will not be executed.
+2026-09-22 23:52:52.775 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:52:52.781 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:52:52.784 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2026-09-22 23:52:52.786 +03:00 [ERR] Connection id "0HNOOTD6F20MM", Request id "0HNOOTD6F20MM:00000003": An unhandled exception was thrown by the application.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context) in /_3/BrowserRefreshMiddleware.cs:line 84
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:52:52.790 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 53.3176ms
+2026-09-22 23:53:12.042 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-09-22 23:53:12.043 +03:00 [INF] CORS policy execution successful.
+2026-09-22 23:53:12.043 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:53:12.043 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-09-22 23:53:12.045 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions+IncludableQueryable`2[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Collections.Generic.ICollection`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-09-22 23:53:12.051 +03:00 [ERR] Failed executing DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType", s1."ClassesId", s1."TrainersId", s1."Id", s1."Discriminator", s1."Email", s1."Name", s1."PasswordHash", s1."Bio", s1."Specialization"
+FROM "SportClasses" AS s
+LEFT JOIN (
+    SELECT s0."ClassesId", s0."TrainersId", u0."Id", u0."Discriminator", u0."Email", u0."Name", u0."PasswordHash", u0."Bio", u0."Specialization"
+    FROM "SportClassTrainer" AS s0
+    INNER JOIN (
+        SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization"
+        FROM "Users" AS u
+        WHERE u."Discriminator" = 'Trainer'
+    ) AS u0 ON s0."TrainersId" = u0."Id"
+) AS s1 ON s."Id" = s1."ClassesId"
+ORDER BY s."Id", s1."ClassesId", s1."TrainersId"
+2026-09-22 23:53:12.055 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'gymfit.Data.GymFitContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:53:12.062 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 18.6617ms
+2026-09-22 23:53:12.063 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-09-22 23:53:12.063 +03:00 [ERR] HTTP GET /odata/SportClasses responded 500 in 20.0564 ms
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:53:12.069 +03:00 [WRN] The response has already started, the error handler will not be executed.
+2026-09-22 23:53:12.069 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:53:12.075 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:53:12.080 +03:00 [WRN] The response has already started, the error page middleware will not be executed.
+2026-09-22 23:53:12.082 +03:00 [ERR] Connection id "0HNOOTD6F20MN", Request id "0HNOOTD6F20MN:00000001": An unhandled exception was thrown by the application.
+Npgsql.PostgresException (0x80004005): 42P01: relation "SportClassTrainer" does not exist
+
+POSITION: 442
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteResourceSetAsync(IAsyncEnumerable`1 asyncEnumerable, IEdmTypeReference resourceSetType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectInlineAsync(Object graph, IEdmTypeReference expectedType, ODataWriter writer, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.Serialization.ODataResourceSetSerializer.WriteObjectAsync(Object graph, Type type, ODataMessageWriter messageWriter, ODataSerializerContext writeContext)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatterHelper.WriteToStreamAsync(Type type, Object value, IEdmModel model, ODataVersion version, Uri baseAddress, MediaTypeHeaderValue contentType, HttpRequest request, IHeaderDictionary requestHeaders, IODataSerializerProvider serializerProvider)
+   at Microsoft.AspNetCore.OData.Formatter.ODataOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultFilters>g__Awaited|28_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.HandleException(HttpContext context, ExceptionDispatchInfo edi)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+   at Microsoft.WebTools.BrowserLink.Net.BrowserLinkMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context) in /_3/BrowserRefreshMiddleware.cs:line 84
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "SportClassTrainer" does not exist
+    Position: 442
+    File: parse_relation.c
+    Line: 1469
+    Routine: parserOpenTable
+2026-09-22 23:53:12.089 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 47.06ms

@@ -1,0 +1,131 @@
+.signup-form {
+    max-width: 450px;
+    margin: 60px auto;
+    background-color: #1e1e24;
+    color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    border: none;
+}
+
+.signup-form .container {
+    padding: 40px 30px;
+}
+
+.signup-form h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.signup-form p {
+    color: #a0a0a5;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+.signup-form hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(to right, #ff4757, transparent);
+    margin-bottom: 30px;
+}
+
+.signup-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #ff4757;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.signup-form input[type=text],
+.signup-form input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    margin-bottom: 24px;
+    display: inline-block;
+    border: 1px solid #2f3542;
+    border-radius: 8px;
+    background: #2f3542;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.signup-form input[type=text]:focus,
+.signup-form input[type=password]:focus {
+    background-color: #3a4150;
+    border-color: #ff4757;
+    outline: none;
+    box-shadow: 0 0 8px rgba(255, 71, 87, 0.2);
+}
+
+.signup-form button {
+    padding: 14px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+}
+
+.signup-form .signupbtn {
+    float: left;
+    width: 48%;
+    background-color: #ff4757;
+    color: white;
+}
+
+.signup-form .signupbtn:hover {
+    background-color: #ff6b81;
+    transform: translateY(-1px);
+}
+
+.signup-form .cancelbtn {
+    float: right;
+    width: 48%;
+    background-color: transparent;
+    color: #a0a0a5;
+    border: 1px solid #2f3542;
+}
+
+.signup-form .cancelbtn:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+.signup-form p a {
+    color: #ff4757;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 15px;
+    transition: color 0.2s;
+}
+
+.signup-form p a:hover {
+    color: #ff6b81;
+    text-decoration: underline;
+}
+
+.signup-form .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 400px) {
+    .signup-form .cancelbtn,
+    .signup-form .signupbtn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

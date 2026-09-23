@@ -1,0 +1,91 @@
+.not-found-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #212529; /* Griul închis din formulare */
+    border: 1px solid #2c3034;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.error-code {
+    font-size: 85px;
+    font-weight: 900;
+    color: #e84118; /* Roșul din temă */
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.not-found-container h2 {
+    margin-top: 0;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.not-found-container .subtitle {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* Grila de link-uri propuse */
+.suggested-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Două coloane curate */
+    gap: 15px;
+}
+
+/* Stilul de bază al butoanelor */
+.suggested-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background-color: #2b3035;
+    border: 1px solid #495057;
+    border-radius: 6px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* Hover general (Verde) */
+.suggested-btn:hover {
+    border-color: #2ed573;
+    background-color: rgba(46, 213, 115, 0.08);
+    color: #2ed573;
+}
+
+/* Accent pentru rute administrative (Portocaliu/Roșu subtil) */
+.suggested-btn.admin-accent {
+    border-color: rgba(232, 65, 24, 0.4);
+}
+.suggested-btn.admin-accent:hover {
+    border-color: #e84118;
+    background-color: rgba(232, 65, 24, 0.08);
+    color: #e84118;
+}
+
+/* Accent pentru Login/Register */
+.suggested-btn.auth-accent {
+    border-color: rgba(0, 123, 255, 0.4);
+}
+.suggested-btn.auth-accent:hover {
+    border-color: #007bff;
+    background-color: rgba(0, 123, 255, 0.08);
+    color: #007bff;
+}
+
+/* Responsivitate pe telefoane */
+@media (max-width: 480px) {
+    .suggested-links {
+        grid-template-columns: 1fr;
+    }
+}

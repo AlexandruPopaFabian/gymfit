@@ -1,0 +1,112 @@
+2026-08-04 09:30:06.840 +03:00 [INF] User profile is available. Using 'C:\Users\alexp\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-04 09:30:07.329 +03:00 [INF] Now listening on: http://localhost:5275
+2026-08-04 09:30:07.462 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-04 09:30:07.462 +03:00 [INF] Hosting environment: Development
+2026-08-04 09:30:07.462 +03:00 [INF] Content root path: C:\Users\alexp\OneDrive\Desktop\PC\server\gymfit
+2026-08-04 09:30:53.856 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-08-04 09:30:53.949 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:30:54.064 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:30:54.091 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-08-04 09:30:55.349 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-04 09:30:55.509 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-08-04 09:30:55.519 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:30:55.520 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-08-04 09:30:55.561 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-08-04 09:30:57.346 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-08-04 09:30:59.680 +03:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-08-04 09:30:59.680 +03:00 [INF] Executed DbCommand (65ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-08-04 09:31:00.173 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 4604.2306ms
+2026-08-04 09:31:00.173 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 6072.9872ms
+2026-08-04 09:31:00.175 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:00.176 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-08-04 09:31:00.181 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 4656.3864 ms
+2026-08-04 09:31:00.181 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 6117.4235 ms
+2026-08-04 09:31:00.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 6368.4088ms
+2026-08-04 09:31:00.211 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 4706.1376ms
+2026-08-04 09:31:02.432 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-08-04 09:31:02.436 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:31:02.444 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-08-04 09:31:02.445 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-08-04 09:31:02.611 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-08-04 09:31:02.631 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-08-04 09:31:02.640 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 195.1601ms
+2026-08-04 09:31:02.641 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-08-04 09:31:02.641 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 196.4899 ms
+2026-08-04 09:31:02.643 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 210.8309ms
+2026-08-04 09:31:06.474 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-08-04 09:31:06.475 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:31:06.475 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:06.475 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-08-04 09:31:06.477 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-04 09:31:06.481 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-08-04 09:31:06.485 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 9.7643ms
+2026-08-04 09:31:06.486 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:06.486 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 10.8580 ms
+2026-08-04 09:31:06.486 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 12.738ms
+2026-08-04 09:31:07.904 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses(4) - null null
+2026-08-04 09:31:07.935 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:31:07.935 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:07.948 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get(Int32) on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-08-04 09:31:08.035 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@key='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+WHERE s."Id" = @key
+LIMIT 1
+2026-08-04 09:31:08.041 +03:00 [INF] Executing OkObjectResult, writing value of type 'gymfit.Models.SportClass'.
+2026-08-04 09:31:08.046 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 97.547ms
+2026-08-04 09:31:08.046 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:08.046 +03:00 [INF] HTTP GET /odata/SportClasses(4) responded 200 in 110.4550 ms
+2026-08-04 09:31:08.046 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses(4) - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 141.8132ms
+2026-08-04 09:31:16.104 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/SportClasses - null null
+2026-08-04 09:31:16.104 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:31:16.105 +03:00 [INF] Executing endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:16.105 +03:00 [INF] Route matched with {action = "Get", controller = "SportClasses"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.SportClassesController (gymfit).
+2026-08-04 09:31:16.106 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[gymfit.Models.SportClass, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-04 09:31:16.110 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "SportClasses" AS s
+2026-08-04 09:31:16.114 +03:00 [INF] Executed action gymfit.Controllers.SportClassesController.Get (gymfit) in 8.9603ms
+2026-08-04 09:31:16.114 +03:00 [INF] Executed endpoint 'gymfit.Controllers.SportClassesController.Get (gymfit)'
+2026-08-04 09:31:16.114 +03:00 [INF] HTTP GET /odata/SportClasses responded 200 in 9.8005 ms
+2026-08-04 09:31:16.115 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/SportClasses - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 11.4614ms
+2026-08-04 09:31:17.123 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/api/memberships - null null
+2026-08-04 09:31:17.127 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:31:17.128 +03:00 [INF] Executing endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-08-04 09:31:17.158 +03:00 [INF] Route matched with {action = "GetAll", controller = "Memberships"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller gymfit.Controllers.MembershipsController (gymfit).
+2026-08-04 09:31:17.196 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT m."Id", m."DurationDays", m."Name", m."Price"
+FROM "Membership" AS m
+2026-08-04 09:31:17.238 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[gymfit.Models.Membership, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-04 09:31:17.276 +03:00 [INF] Executed action gymfit.Controllers.MembershipsController.GetAll (gymfit) in 118.7881ms
+2026-08-04 09:31:17.277 +03:00 [INF] Executed endpoint 'gymfit.Controllers.MembershipsController.GetAll (gymfit)'
+2026-08-04 09:31:17.277 +03:00 [INF] HTTP GET /api/memberships responded 200 in 148.9442 ms
+2026-08-04 09:31:17.277 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/api/memberships - 200 null application/json; charset=utf-8 154.1065ms
+2026-08-04 09:31:30.897 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - null null
+2026-08-04 09:31:30.897 +03:00 [INF] CORS policy execution successful.
+2026-08-04 09:31:30.898 +03:00 [INF] Executing endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-08-04 09:31:30.898 +03:00 [INF] Route matched with {action = "Get", controller = "Trainers"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Get() on controller gymfit.Controllers.TrainersController (gymfit).
+2026-08-04 09:31:30.906 +03:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[Microsoft.AspNetCore.OData.Query.Wrapper.SelectAllAndExpand`1[[gymfit.Models.Trainer, gymfit, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], Microsoft.AspNetCore.OData, Version=9.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35]]'.
+2026-08-04 09:31:30.914 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT u."Id", u."Discriminator", u."Email", u."Name", u."PasswordHash", u."Bio", u."Specialization", s."Id", s."Duration", s."Equipment", s."ImageUrl", s."Level", s."Name", s."TrainerId", s."TrainingType"
+FROM "Users" AS u
+LEFT JOIN "SportClasses" AS s ON u."Id" = s."TrainerId"
+WHERE u."Discriminator" = 'Trainer'
+ORDER BY u."Id"
+2026-08-04 09:31:30.919 +03:00 [INF] Executed action gymfit.Controllers.TrainersController.Get (gymfit) in 21.1839ms
+2026-08-04 09:31:30.919 +03:00 [INF] Executed endpoint 'gymfit.Controllers.TrainersController.Get (gymfit)'
+2026-08-04 09:31:30.919 +03:00 [INF] HTTP GET /odata/Trainers responded 200 in 21.7306 ms
+2026-08-04 09:31:30.920 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5275/odata/Trainers?$expand=Classes - 200 null application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8 22.6243ms

@@ -1,0 +1,83 @@
+/* Containerul Principal - Compact și integrat în tema dark */
+.delete-class-container {
+    max-width: 500px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #212529; /* Griul închis uniform din restul paginilor */
+    border: 1px solid #2c3034;
+    border-radius: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.delete-class-container h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Grupul de Formular */
+.delete-class-container .form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.delete-class-container .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.8px;
+    color: #e84118; /* Eticheta roșie de atenționare */
+}
+
+/* Selectorul Dropdown */
+.delete-class-container .form-select {
+    width: 100%;
+    padding: 14px;
+    background-color: #2b3035; /* Gri contrastant pentru opțiuni */
+    border: 1px solid #495057;
+    border-radius: 6px;
+    color: #ffffff;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.delete-class-container .form-select:focus {
+    outline: none;
+    border-color: #ff4757; /* Focus pe roșu pentru acțiunile distructive */
+    box-shadow: 0 0 0 3px rgba(255, 71, 87, 0.15);
+}
+
+/* Butonul de Ștergere */
+.delete-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background-color: #ff2e44;
+}
+
+.delete-btn:disabled {
+    background-color: #343a40;
+    color: #6c757d;
+    cursor: not-allowed;
+}

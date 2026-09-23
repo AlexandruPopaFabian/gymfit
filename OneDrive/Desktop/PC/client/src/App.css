@@ -1,0 +1,196 @@
+/* --- Structura de Bază Navbar --- */
+.navbar {
+    margin: 0;
+    padding: 0 16px;
+    background-color: #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 50px;
+    z-index: 10000;
+}
+
+/* Lista cu meniurile principale */
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Zona din dreapta pentru acțiuni */
+.nav-right-zone {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.nav-auth-buttons {
+    display: flex;
+}
+
+.elements {
+    display: inline-block;
+}
+
+.links {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.links:hover {
+    background-color: #111111;
+}
+
+.links.active {
+    background-color: #9c0909;
+}
+
+/* --- Dropdown Profil Utilizator --- */
+.dropdown-container {
+    position: relative;
+}
+
+.menu-trigger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: white;
+}
+
+.dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: #1e1e24;
+    border: 1px solid #2f3542;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 160px;
+    z-index: 99999;
+}
+
+.dropdown-item.user-welcome {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    color: #a0a0a5;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.dropdown-divider {
+    border: 0;
+    height: 1px;
+    background: #2f3542;
+    margin: 5px 0;
+}
+
+.dropdown-link {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: left;
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-link:hover {
+    background-color: #2f3542;
+    color: #ff4757;
+}
+
+.dropdown-link.logout-btn {
+    color: #ff4757;
+    font-weight: 600;
+}
+
+/* --- Butonul Burger (Ascuns pe Desktop) --- */
+.burger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10001; /* Rămâne deasupra overlay-ului */
+}
+
+.burger-line {
+    width: 24px;
+    height: 3px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    transform-origin: 1px;
+}
+
+/* --- 📱 RESPONSIVITATE (Ecran de Mobil) --- */
+@media (max-width: 768px) {
+    .burger-btn {
+        display: flex; /* Afișăm burgerul */
+    }
+
+    /* Transformăm lista principală într-un Overlay Full-Screen */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1a1a1a;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Ascuns în stânga implicit */
+    }
+
+    /* Când starea este deschisă, aducem meniul pe ecran */
+    .nav-menu.mobile-open {
+        transform: translateX(0);
+    }
+
+    .nav-menu .elements {
+        width: 80%;
+        text-align: center;
+    }
+
+    .nav-menu .links {
+        font-size: 1.5rem; /* Font mărit, ușor de apăsat cu degetul */
+        padding: 15px 0;
+        border-bottom: 1px solid #333;
+    }
+
+    /* Animație pentru liniile burgerului când este DESCHIS (formează un X) */
+    .burger-btn.open .burger-line:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .burger-btn.open .burger-line:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    .burger-btn.open .burger-line:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+}
